@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athens Academy</title>
+    <style>
+        :root {
+            --palm-leaf: rgba(10, 116, 26);
+            --bright-sun: rgba(255, 204, 0);
+            --foggy-gray: rgba(33, 36, 43);
+            --roti: rgba(204, 153, 51);
+            --apple: #64a439;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--foggy-gray);
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 2.5rem;
+            position: relative;
+            color: var(--bright-sun);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--palm-leaf);
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 300px;
+            border: 2px solid var(--apple);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            background-color: var(--foggy-gray);
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--apple);
+        }
+
+        .box p {
+            font-size: 1.1rem;
+            color: var(--bright-sun);
+            text-align: center;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .box-container {
+                flex-direction: column;
+            }
+            
+            .box {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <h2 class="section-title">About Athens Academy</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Athens Academy Hymn</h3>
+                <p>
+                    God bless Athens Academy<br>
+                    We wave our banner high for you<br>
+                    The Cradle of the future leaders<br>
+                    And explorer of the new millennium<br>
+                    To you we pledge our loyalty<br>
+                    As we journey to our chosen path<br>
+                    To continue our quest for knowledge<br>
+                    That will serve mankind<br><br>
+                    
+                    We are the youth of the new generation<br>
+                    Inspired by the men of ancient Greece<br>
+                    The pride of our fatherland<br>
+                    Breed to face the challenge of tomorrow<br><br>
+                    
+                    With God on our side through Christ<br>
+                    We'll march to battle dignified<br>
+                    With the common goals in our hearts and minds<br>
+                    To be victors in our chosen field<br><br>
+                    
+                    We are the Athenians<br>
+                    United as one Family<br>
+                    United in one mission<br>
+                    To serve God, Country, and Humanity!
+                </p>
+            </div>
+            <div class="box">
+                <h3>Mission</h3>
+                <p>Athens Academy is committed to develop well-rounded and productive individuals imbued with Christian values, reflected in their way of life and service to others for the Honor and Greater Glory of God.</p>
+            </div>
+            <div class="box">
+                <h3>Vision</h3>
+                <p>An institution that advocates excellence through the integration of Godly principles and hard work in service to God, Country, and Humanity.</p>
+            </div>    
+        </div>
+    </section>
+</body>
+</html>
